@@ -1,0 +1,131 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 477
+  ClientWidth = 695
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image1: TImage
+    Left = 8
+    Top = 40
+    Width = 400
+    Height = 400
+    Cursor = crCross
+  end
+  object Panel1: TPanel
+    Left = 430
+    Top = 40
+    Width = 249
+    Height = 400
+    TabOrder = 0
+    object Button1: TButton
+      Left = 72
+      Top = 32
+      Width = 105
+      Height = 33
+      Caption = 'Cauadrante 1'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Button7: TButton
+      Left = 72
+      Top = 344
+      Width = 105
+      Height = 33
+      Cursor = crNo
+      Caption = 'Salir'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clRed
+      Font.Height = -19
+      Font.Name = 'Verdana'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 1
+      OnClick = Button7Click
+    end
+    object Button2: TButton
+      Left = 72
+      Top = 80
+      Width = 105
+      Height = 33
+      Caption = 'Cauadrante 2'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 2
+    end
+    object Button3: TButton
+      Left = 72
+      Top = 128
+      Width = 105
+      Height = 33
+      Caption = 'Cauadrante 3'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 3
+    end
+    object Button4: TButton
+      Left = 72
+      Top = 184
+      Width = 105
+      Height = 33
+      Caption = 'Cauadrante 4'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 4
+    end
+    object Button5: TButton
+      Left = 72
+      Top = 232
+      Width = 105
+      Height = 33
+      Caption = 'Cauadrante 5'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 5
+    end
+  end
+  object Button6: TButton
+    Left = 502
+    Top = 320
+    Width = 105
+    Height = 33
+    Caption = 'Cauadrante 7'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+  end
+end

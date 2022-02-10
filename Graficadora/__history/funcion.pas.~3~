@@ -1,0 +1,213 @@
+unit funcion;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    Graph: TImage;
+    Panel1: TPanel;
+    Label1: TLabel;
+    Button1: TButton;
+    Edit2: TEdit;
+    Label2: TLabel;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Edit1: TEdit;
+    Label3: TLabel;
+    Label4: TLabel;
+    Button5: TButton;
+    Button6: TButton;
+    Button7: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+Var
+a,b,Col,Ren: Integer;
+x,Dx,Max,Min,y: Real;
+
+Begin
+  {Pasa número 2}
+  a := StrToInt(Edit1.Text);
+  b := StrToInt(Edit2.Text);
+
+  Max := 8*Sin(a);
+  Min := Max;
+
+  Dx := (b - a) / Graph.Width;
+  x := a;
+
+  for Col := 1 to Graph.Width do
+  Begin
+    y := 8*Sin(x);
+    If(y > Max) then
+      Max := y;
+    If(y < Min) then
+      Min := y;
+
+    x := x + Dx;
+  End;
+
+  {Paso número 3}
+  x := a;
+  for Col := 1 to Graph.Width do
+  Begin
+    y := 8*Sin(x);
+    Ren := Round(((Graph.Width-0)/(Min - Max)) * (y - Max) + 0);
+    Graph.Canvas.Pixels[Col, Ren] := Clred;
+    x := x + Dx;
+  End
+
+
+End;
+
+procedure TForm1.FormCreate(Sender: TObject);
+Var
+I: Integer;
+
+begin
+  {La ventana aparece en el centro}
+  Position := poScreenCenter;
+
+  {Se dibuja un rectangulo que abarca toda la imagen}
+  Graph.Canvas.Rectangle(0,0,Graph.Width,Graph.Height);
+
+  {Se dibujan los cuadrantes}
+  for I := 1 to Graph.Width do
+    begin
+      Graph.Canvas.Pixels[0+i,Graph.Width div 2] := Clblack;
+      Graph.Canvas.Pixels[Graph.Width div 2,0+i] := Clblack;
+    end;
+
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+Var
+a,b,Col,Ren: Integer;
+x,Dx,Max,Min,y: Real;
+
+Begin
+  a := StrToInt(Edit1.Text);
+  b := StrToInt(Edit2.Text);
+
+  Max := 2*(a*a);
+  Min := Max;
+
+  Dx := (b - a) / Graph.Width;
+  x := a;
+
+  for Col := 1 to Graph.Width do
+  Begin
+    y := 2*(x*x);
+    If(y > Max) then
+      Max := y;
+    If(y < Min) then
+      Min := y;
+
+    x := x + Dx;
+  End;
+
+  {Paso número 3}
+  x := a;
+  for Col := 1 to Graph.Width do
+  Begin
+    y := 2*(x*x);
+    Ren := Round(((Graph.Width-0)/(Min - Max)) * (y - Max) + 0);
+    Graph.Canvas.Pixels[Col, Ren] := Clred;
+    x := x + Dx;
+  End
+
+End;
+
+
+procedure TForm1.Button3Click(Sender: TObject);
+Var
+a,b,Col,Ren: Integer;
+x,Dx,Max,Min,y: Real;
+
+Begin
+  {Paso número 2}
+  a := StrToInt(Edit1.Text);
+  b := StrToInt(Edit2.Text);
+
+  Max := a*a*a;
+  Min := Max;
+
+  Dx := (b - a) / Graph.Width;
+  x := a;
+
+  for Col := 1 to Graph.Width do
+  Begin
+    y := x*x*x;
+    If(y > Max) then
+      Max := y;
+    If(y < Min) then
+      Min := y;
+
+    x := x + Dx;
+  End;
+
+  {Paso número 3}
+  x := a;
+  for Col := 1 to Graph.Width do
+  Begin
+    y := x*x*x;
+    Ren := Round(((Graph.Width-0)/(Min - Max)) * (y - Max) + 0);
+    Graph.Canvas.Pixels[Col, Ren] := Clred;
+    x := x + Dx;
+  End
+
+End;
+
+procedure TForm1.Button4Click(Sender: TObject);
+Var
+I: integer;
+
+begin
+  {Se dibuja un rectangulo que abarca toda la imagen}
+  Graph.Canvas.Rectangle(0,0,Graph.Width,Graph.Height);
+
+  {Se dibujan los cuadrantes}
+  for I := 1 to Graph.Width do
+    begin
+      Graph.Canvas.Pixels[0+i,Graph.Width div 2] := Clblack;
+      Graph.Canvas.Pixels[Graph.Width div 2,0+i] := Clblack;
+    end;
+end;
+
+procedure TForm1.Button5Click(Sender: TObject);
+begin
+  ShowMessage('Alfredo Omar Vásquez López');
+end;
+
+procedure TForm1.Button7Click(Sender: TObject);
+begin
+  Close();
+end;
+
+end.
+
+
+
