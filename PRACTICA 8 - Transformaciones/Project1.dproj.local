@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/02/15 09:36:54.000.855,=D:\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/15 09:37:42.000.430,D:\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=D:\Documentos\GitHub\Pascal\PRACTICA 8 - Transformaciones\Unit1.dfm</Transaction>
+    <Transaction>2022/02/15 09:37:42.000.430,D:\Documentos\Embarcadero\Studio\Projects\Unit1.pas=D:\Documentos\GitHub\Pascal\PRACTICA 8 - Transformaciones\Unit1.pas</Transaction>
+    <Transaction>2022/02/15 09:37:45.000.273,D:\Documentos\Embarcadero\Studio\Projects\Project1.dproj=D:\Documentos\GitHub\Pascal\PRACTICA 8 - Transformaciones\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -2,8 +2,8 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2022/02/03 09:14:30.000.672,=D:\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/02/03 09:14:59.000.862,D:\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=D:\Documentos\GitHub\Pascal\Imagen.dfm</Transaction>
-    <Transaction>2022/02/03 09:14:59.000.862,D:\Documentos\Embarcadero\Studio\Projects\Unit1.pas=D:\Documentos\GitHub\Pascal\Imagen.pas</Transaction>
-    <Transaction>2022/02/03 09:15:16.000.281,D:\Documentos\Embarcadero\Studio\Projects\Project1.dproj=D:\Documentos\GitHub\Pascal\CargaImagen.dproj</Transaction>
+    <Transaction>2022/02/03 09:14:59.000.862,D:\Documentos\GitHub\Pascal\Imagen.dfm=D:\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/02/03 09:14:59.000.862,D:\Documentos\GitHub\Pascal\Imagen.pas=D:\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/02/03 09:15:16.000.281,D:\Documentos\GitHub\Pascal\CargaImagen.dproj=D:\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
   </Transactions>
 </BorlandProject>
